@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #edf8f5;
+}
+
+/* Navbar */
+.navbar {
+  /* background-color: #2F7365; */
+  background-color: #739a76;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  color: white;
+}
+
+.logo {
+  background-image: url("meditrack_logo.jpg");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  /* background-color: #e4f5f1; */
+  background-image: url("med1.jpg!bw700");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  gap: 40px;
+}
+
+.hero-content {
+  max-width: 500px;
+  text-align: center;
+}
+
+.head1 {
+  font-size: 28px;
+  font-weight: 600;
+  /* color: #1e4036; */
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.hero-image {
+  background-image: url("homepage.png");
+  background-size: cover;
+  background-position: center;
+  width: 450px;
+  height: 240px;
+  border-radius: 12px;
+}
+
+/* Button */
+.button {
+  background-color: #2F7365;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+  background-color: #265f53;
+}
+
+/* Info Section */
+.info-section {
+  padding: 40px 20px;
+  background-color: #edf8f5;
+}
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box-img {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.box-content h2 {
+  color: #2F7365;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.box-content p {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.box-content ul {
+  font-size: 14px;
+  color: #333;
+  padding-left: 20px;
+  text-align: left;
+}
+
+/* Contact Section */
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #008978;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background: #008978;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #008978;
+}
+
+#formStatus {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+
+/* Footer */
+.footer {
+  background-color: #2F7365;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}

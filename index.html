@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MITrek</title>
+  <link rel="icon" href="meditrack_logo.jpg" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css?v=1.0" />
+
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header>
+    <div class="navbar">
+      <div class="logo"></div>
+      <p class="heading">MITrek</p>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 class="head1">Stay Stocked, Stay Safe: Medicine Tracking Made Easy</h1>
+      <button class="button" onclick="window.location.href='login.html'">Get Started</button>
+    </div>
+    <div class="hero-image"></div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="info-section">
+    <div class="box-container">
+      <!-- Feature 1 -->
+      <div class="box">
+        <div class="box-img" style="background-image: url('box1img.avif');"></div>
+        <div class="box-content">
+          <h2>Real-Time Stock Management</h2>
+          <p>Keep your shelves stocked effortlessly:</p>
+          <ul>
+            <li>Live updates for all medicines.</li>
+            <li>Quick stock additions.</li>
+            <li>Update batches, costs & more.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="box">
+        <div class="box-img" style="background-image: url('box2img.jpg');"></div>
+        <div class="box-content">
+          <h2>Expiry Tracking & Alerts</h2>
+          <p>Say goodbye to expired stock:</p>
+          <ul>
+            <li>Get timely expiry alerts.</li>
+            <li>Track soon-to-expire meds.</li>
+            <li>Cut losses & improve safety.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="box">
+        <div class="box-img" style="background-image: url('box3img.avif');"></div>
+        <div class="box-content">
+          <h2>Full Stock Reports & Insights</h2>
+          <p>Stay informed with insights:</p>
+          <ul>
+            <li>Detailed daily/monthly reports.</li>
+            <li>Sales & stock analytics.</li>
+            <li>Smarter purchase decisions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="box">
+        <div class="box-img" style="background-image: url('box4img.jpg');"></div>
+        <div class="box-content">
+          <h2>Tailored for All Pharmacies</h2>
+          <p>Fits any setup from clinics to chains:</p>
+          <ul>
+            <li>Multi-user & multi-branch ready.</li>
+            <li>Custom features available.</li>
+            <li>Secure access control.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <form class="contact-form" id="contactForm" method="POST" action="contact.php">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+<div id="formStatus" style="margin-top:10px; font-weight:bold;"></div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 MITrek. All rights reserved.</p>
+  </footer>
+
+  <script src="index.js" defer></script>
+
+</body>
+</html>

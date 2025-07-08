@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signin/MITrek</title>
+    <link rel="icon" href="meditrack_logo.jpg"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="form-box login">
+            <form id="login-form" action="javascript:void(0)">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required id="LOGIN_NAME">
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required id="LOGIN_PASSWORD">
+                    <i class='bx bxs-lock-alt' ></i>
+                </div>
+                <!-- <div class="forgot-link">
+                    <a href="#">Forgot Password?</a>
+                </div> -->
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-box register">
+            <form id="register-form" action="javascript:void(0)">
+                <h1>Registration</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required id="REG_NAME">
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Store Name" required id="REG_STORE">
+                    <i class='bx bxs-store'></i>
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Email" required id="REG_EMAIL">
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required id="REG_PASSWORD">
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+
+        <!-- Toggle Panel -->
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Hello, Welcome!</h1>
+                <p>Don't have an account?</p>
+                <button class="btn register-btn">Register</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Welcome Back!</h1>
+                <p>Already have an account?</p>
+                <button class="btn login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

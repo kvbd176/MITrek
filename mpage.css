@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(90deg, #F0FFF3, #E6F9F0);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #304031;
+  /* background-color: #334155; */
+  color: white;
+  padding: 10px 10px;
+}
+/**/
+.nav-logo{
+  display: flex;
+}
+.logo{
+    background-image: url("meditrack_logo.jpg");
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-top: 4px;
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+.heading{
+    background-size: cover;
+    font-size: medium;
+    font-weight: 600;
+    padding: 10px 5px;
+    margin-top:10px;
+    margin-left: 4px;
+}
+/**/
+.profile-icon {
+  font-size: 35px;
+  cursor: pointer;
+  color:white;
+  margin-top: 12px;
+}
+
+.profile-icon.hover{
+border: #fff;
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  right: 0;
+  top: 45px;
+  background-color: white;
+  color: black;
+  border: 1px solid #ccc;
+  width: 150px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+
+.dropdown p {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown p:hover {
+  background-color: #f0f0f0;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+
+
+.sidebar {
+  width: 250px;
+  /* background-color: #1e293b; */
+  background-image: url("med.png");
+  background-size: 100%;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar button {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  display: block;
+  background: none;
+  border: none;
+  padding: 10px 0;
+  justify-content: center;
+  cursor: pointer;
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #388e3c;
+    color: #1b5e20;
+}
+
+.sidebar button:hover {
+  background-color: #334155;
+  color: #fff;
+}
+
+.main {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+input, textarea {
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background-color: white;
+  color: black;
+  font-size: 14px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #3c583e;
+  color: white;
+}
+
+tr:hover {
+  background-color: #f2f2f2;
+}
+
+#expiredTable {
+  display: table !important;
+  width: 100% !important;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+#expiredTable th, #expiredTable td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+/*dashboard styling*/
+/* Dashboard Section */
+#dashboard.section {
+  padding: 40px 20px;
+  background-color: #f7fdfc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Dashboard Greeting Text */
+#dashboardGreeting {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2F7365;
+  margin-bottom: 20px;
+  animation: fadeIn 0.8s ease-in-out;
+}
